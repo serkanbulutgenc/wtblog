@@ -34,8 +34,10 @@
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
-        {% block content %}{% endblock %}
+        {% include 'includes/header.html' %}
 
+        {% block content %}{% endblock %}{#
+            
         {#Footer section}
         {% include 'includes/footer.html'%} 
 
